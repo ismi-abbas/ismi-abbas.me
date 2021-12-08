@@ -1,0 +1,11 @@
+{
+  "name": "ismi-abbas.me",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./index.css -o ./tailwind.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
