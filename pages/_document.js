@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body className="text-gray-800 font-poppins py-20 px-32">
+        <body className="text-gray-800 font-poppins py-20 mx-60">
           <Main />
           <NextScript />
         </body>
