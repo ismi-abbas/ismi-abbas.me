@@ -4,8 +4,23 @@
   "description": "My portfolio website",
   "main": "index.html",
   "scripts": {
-    "build": "npx tailwindcss -i ./index.css -o ./tailwind.css -w"
+    "build:css": "npx tailwindcss -i ./index.css -o ./tailwind.css -w",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^2.2.19"
+  }
 }
