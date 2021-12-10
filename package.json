@@ -4,7 +4,7 @@
   "description": "My portfolio website",
   "main": "index.html",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./index.css -o ./tailwind.css -w",
+    "build:css": "npx tailwindcss -i ./styles/index.css -o ./tailwind.css -w",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

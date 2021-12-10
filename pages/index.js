@@ -1,9 +1,8 @@
 import "tailwindcss/tailwind.css";
 import Head from "next/head";
 
-import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { fab, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
 function Home() {
   return (
@@ -28,8 +27,7 @@ function Home() {
           <nav className='w-full flex justify-between items-center py-7 md:px-14 shadow-lg mx-auto'>
             <a
               href='#'
-              className='text-lg font-bold hover:text-purple-600 cursor-pointer'
-            >
+              className='text-lg font-bold hover:text-purple-600 cursor-pointer'>
               ismi-abbas.dev
             </a>
             <div className='hidden md:flex space-x-6 items-center'>
@@ -38,20 +36,17 @@ function Home() {
               </a>
               <a
                 href='#experience'
-                className='hover:text-purple-600 cursor-pointer'
-              >
+                className='hover:text-purple-600 cursor-pointer'>
                 Experience
               </a>
               <a
                 href='#project'
-                className='hover:text-purple-600 cursor-pointer'
-              >
+                className='hover:text-purple-600 cursor-pointer'>
                 Project
               </a>
               <a
                 href='#contact'
-                className='hover:text-purple-600 cursor-pointer'
-              >
+                className='hover:text-purple-600 cursor-pointer'>
                 Contact
               </a>
             </div>
@@ -62,7 +57,7 @@ function Home() {
           {/* Intro Text */}
           <div className='justify-center'>
             <h1 className='text-5xl font-semibold text-purple-600 p-8'>
-              Hello it's me Abbas! 👉🏻
+              Hello it's me Abbas!
             </h1>
             <div className='text-left text-2xl mb-2 mx-auto px-8'>
               My name is Abbas and I am a{" "}
@@ -87,11 +82,66 @@ function Home() {
           </div>
         </div>
 
+        {/* Experience section */}
+        <section>
+          <div className='flex mt-10'>
+            <h1
+              id='experience'
+              className='
+      text-2xl
+      font-bold
+      py-8
+      mx-auto
+      px-8
+      md:px-14
+      lg:px-24
+      items-center'>
+              Experience
+            </h1>
+          </div>
+          <div className='grid grid-cols-2 gap-2 px-24 py-10 mx-auto'>
+            {/* Experience 1 */}
+            <div className='p-10 shadow-lg rounded-lg'>
+              <h1 className='text-2xl font-semibold tracking-wider'>
+                Fullstack Developer Training
+              </h1>
+              <div>
+                <h1 className='text-lg'>
+                  Brickfields Asia College, Kementerian Pelajaran Tinggi
+                  <br />
+                  Career Advancement Program
+                </h1>
+                <p className='text-justify my-5'>
+                  A training provided by BAC college apart of the KPT Career
+                  Advancement Program that train participant to be a fullstack
+                  web developer(with programming skills)
+                </p>
+              </div>
+            </div>
+            {/* Experience 2 */}
+            <div className='p-10 shadow-lg rounded-lg'>
+              <h1 className='text-2xl font-semibold tracking-wider'>
+                Computer/Laptop Technician
+              </h1>
+              <div>
+                <h1 className='text-lg'>
+                  <a href='https://www.facebook.com/leelepair' target='_blank'>
+                    Leelepair
+                  </a>
+                </h1>
+                <p className='text-justify my-5'>
+                  A freelance job, providing laptop and computer service
+                  including software and hardware.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
         {/* Project section */}
-        <div className='justify-items-center'>
-          <h1
-            id='projects'
-            className='
+        <div id='project' className='w-full'>
+          <div className='flex'>
+            <h1
+              className='flex
       text-2xl
       font-bold
       py-10
@@ -99,10 +149,12 @@ function Home() {
       md:px-14
       lg:px-24
       items-center
-    '
-          >
-            Projects
-          </h1>
+      text-center
+    '>
+              Project
+            </h1>
+          </div>
+
           <div
             id='project'
             className='
@@ -114,13 +166,20 @@ function Home() {
     md:px-14
     lg:px-24
     items-center
-  '
-          >
+  '>
             {/* Project 1 */}
             <div className='border-2 rounded p-10 h-full w-full'>
               <div className='h-1/2'>
                 <h2 className='text-2xl font-semibold pb-2 tracking-wider'>
-                  YLEARN E-LEARNING WEBSITE
+                  YLEARN E-LEARNING WEBSITE {""}
+                  <a
+                    href='https://github.com/ismi-abbas/e-learning-website'
+                    target='_blank'>
+                    <FontAwesomeIcon
+                      icon={faGithubSquare}
+                      className='hover:text-purple-600'
+                    />
+                  </a>
                 </h2>
                 <h3 className='pb-2 text-lg'>A fullstack web application</h3>
                 <p className='mt-2 leading-loose'>
@@ -129,22 +188,34 @@ function Home() {
                   <span className='font-semibold hover:text-purple-600'>
                     <a
                       href='https://infinite-dawn-88060.herokuapp.com/'
-                      target='blank'
-                    >
+                      target='blank'>
                       Heroku.
                     </a>
-                  </span>
+                  </span>{" "}
+                  Shoutout to {""}
+                  <a
+                    href='https://github.com/damiadaraman'
+                    className='hover:text-purple-600 hover:underline'>
+                    Mia
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href='https://github.com/june0418'
+                    className='hover:text-purple-600 hover:underline'>
+                    June
+                  </a>{" "}
+                  for making this project success!
                 </p>
               </div>
 
               <div className=''>
                 <h1 className='font-semibold text-lg my-4'>Stacks :</h1>
-                <div className='grid grid-cols-2 gap-2w-1/2'>
-                  <div className='flex items-center text-lg gap-2 font-semibold justify-start'>
+                <div className='grid grid-cols-3'>
+                  <div className='flex items-center text-lg gap-2 font-semibold justify-start p-2'>
                     <img
                       src='https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
                       alt='react'
-                      className='w-10'
+                      className='w-1/6'
                     />
                     React
                   </div>
@@ -152,7 +223,7 @@ function Home() {
                     <img
                       src='https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg'
                       alt='mongodb'
-                      className='w-10'
+                      className='w-1/6'
                     />
                     MongoDB
                   </div>
@@ -160,7 +231,7 @@ function Home() {
                     <img
                       src='https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg'
                       alt='expressjs'
-                      className='w-10'
+                      className='w-1/6'
                     />
                     Express
                   </div>
@@ -168,21 +239,12 @@ function Home() {
                     <img
                       src='https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg'
                       alt='nodejs'
-                      className='w-10'
+                      className='w-1/6'
                     />
                     NodeJs
                   </div>
                 </div>
               </div>
-              <a
-                href='https://github.com/ismi-abbas/e-learning-website'
-                target='_blank'
-              >
-                <FontAwesomeIcon
-                  icon={faGithubSquare}
-                  className='hover:text-purple-600 w-7'
-                />
-              </a>
             </div>
             {/* Project 2 */}
             <div className='border-2 rounded p-10 h-full w-full'>
@@ -196,12 +258,12 @@ function Home() {
 
               <div className='h-1/2'>
                 <h1 className='font-semibold text-lg my-4'>Stacks :</h1>
-                <div className='grid grid-cols-2 gap-2w-1/2'>
-                  <div className='flex items-center text-lg gap-2 font-semibold justify-start'>
+                <div className='grid grid-cols-3'>
+                  <div className='flex items-center text-lg gap-2 font-semibold justify-start p-2'>
                     <img
                       src='https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'
                       alt='react'
-                      className='w-10'
+                      className='w-1/6'
                     />
                     React
                   </div>
@@ -209,7 +271,7 @@ function Home() {
                     <img
                       src='https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'
                       alt='mongodb'
-                      className='w-10'
+                      className='w-1/6'
                     />
                     Tailwind
                   </div>
@@ -218,47 +280,16 @@ function Home() {
             </div>
           </div>
         </div>
-        {/* Experience section */}
-        <section>
-          <div>
-            <h1
-              id='experience'
-              className='
-      text-2xl
-      font-bold
-      py-10
-      mx-auto
-      px-8
-      md:px-14
-      lg:px-24
-      items-center'
-            >
-              Experience
-            </h1>
-          </div>
-        </section>
-        {/* Footer */}
 
-        <div
-          className='bg-gray-900 text-white grid grid-cols-4
-      py-10
-      mx-auto
-      px-8
-      md:px-14
-      lg:px-24
-      items-center
-      fixed
-      bottom-0
-      inset-x-0'
-        >
-          <div>Contact</div>
-          <div>Row2 </div>
-          <div>Row3 </div>
-          <div>Row4 </div>
-        </div>
+        {/* Footer */}
       </div>
     </div>
   );
+}
+
+function download() {
+  var iframe = document.getElementById("invisible");
+  iframe.src = "file.doc";
 }
 
 export default Home;
